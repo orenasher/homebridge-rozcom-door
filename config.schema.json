@@ -1,0 +1,38 @@
+{
+  "pluginAlias": "RozcomDoor",
+  "pluginType": "accessory",
+  "singular": false,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "Front Door",
+        "required": true
+      },
+      "mqttHost": {
+        "title": "MQTT Broker Host",
+        "type": "string",
+        "default": "62.219.14.161",
+        "required": true
+      },
+      "mqttPort": {
+        "title": "MQTT Broker Port",
+        "type": "integer",
+        "default": 1883,
+        "required": true
+      },
+      "topic": {
+        "title": "MQTT Topic",
+        "type": "string",
+        "required": true
+      },
+      "payload": {
+        "title": "MQTT Payload",
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}

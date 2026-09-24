@@ -1,0 +1,20 @@
+{
+  "name": "homebridge-rozcom-door",
+  "version": "1.0.0",
+  "description": "Homebridge plugin to open a Rozcom Smart Intercom building entrance door via MQTT",
+  "main": "index.js",
+  "keywords": ["homebridge-plugin", "rozcom", "intercom", "mqtt"],
+  "engines": {
+    "homebridge": ">=1.0.0",
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orenasher/homebridge-rozcom-door.git"
+  },
+  "author": "Oren Asher",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^5.0.0"
+  }
+}
