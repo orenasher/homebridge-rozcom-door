@@ -1,5 +1,7 @@
 # homebridge-rozcom-door
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://paypal.me/orenasher)
+
 English | עברית (below / למטה)
 
 ## English
@@ -47,3 +49,7 @@ The values come from the Rozcom app's MQTT traffic. Capture it with mitmproxy in
 
 ### איך מוצאים את הערכים
 הערכים נלקחים מתעבורת MQTT של אפליקציית Rozcom. אפשר ללכוד אותה עם mitmproxy במצב transparent בזמן לחיצה על כפתור הפתיחה. עשה זאת רק עבור הדלת שלך ושמור על מספר הבניין והקוד בסוד.
+
+## Support
+
+If this plugin saves you time, you can buy me a coffee: [paypal.me/orenasher](https://paypal.me/orenasher). Thank you!
