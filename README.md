@@ -1,3 +1,5 @@
+<p align="center"><img src="icon-512.png" width="120" alt=""></p>
+
 # homebridge-rozcom-door
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://paypal.me/orenasher)
