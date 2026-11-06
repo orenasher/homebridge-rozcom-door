@@ -1,6 +1,6 @@
 {
   "name": "homebridge-rozcom-door",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Homebridge plugin to open a Rozcom Smart Intercom building entrance door via MQTT",
   "main": "index.js",
   "keywords": [
@@ -12,7 +12,7 @@
   ],
   "engines": {
     "homebridge": "^1.6.0 || ^2.0.0",
-    "node": "^18.20.4 || ^20.15.1 || ^22 || ^24"
+    "node": "^18.20.4 || ^20.15.1 || ^22 || ^24 || ^26"
   },
   "repository": {
     "type": "git",
