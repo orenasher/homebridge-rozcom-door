@@ -8,31 +8,33 @@
       "name": {
         "title": "Name",
         "type": "string",
-        "default": "Front Door",
-        "required": true
+        "default": "Front Door"
       },
       "mqttHost": {
         "title": "MQTT Broker Host",
         "type": "string",
-        "default": "62.219.14.161",
-        "required": true
+        "default": "62.219.14.161"
       },
       "mqttPort": {
         "title": "MQTT Broker Port",
         "type": "integer",
-        "default": 1883,
-        "required": true
+        "default": 1883
       },
       "topic": {
         "title": "MQTT Topic",
-        "type": "string",
-        "required": true
+        "type": "string"
       },
       "payload": {
         "title": "MQTT Payload",
-        "type": "string",
-        "required": true
+        "type": "string"
       }
-    }
+    },
+    "required": [
+      "name",
+      "mqttHost",
+      "mqttPort",
+      "topic",
+      "payload"
+    ]
   }
 }
