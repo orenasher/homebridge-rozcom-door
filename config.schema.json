@@ -1,40 +1,52 @@
 {
   "pluginAlias": "RozcomDoor",
-  "pluginType": "accessory",
-  "singular": false,
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Open your building entrance door from Apple Home. Add one door per Rozcom intercom door. / פתיחת דלת הכניסה של הבניין מאפליקציית הבית. מוסיפים דלת לכל דלת אינטרקום של Rozcom.",
   "schema": {
     "type": "object",
     "properties": {
       "name": {
         "title": "Name",
         "type": "string",
-        "default": "Front Door"
+        "default": "Rozcom Door"
       },
-      "mqttHost": {
-        "title": "MQTT Broker Host",
-        "type": "string",
-        "default": "62.219.14.161"
-      },
-      "mqttPort": {
-        "title": "MQTT Broker Port",
-        "type": "integer",
-        "default": 1883
-      },
-      "topic": {
-        "title": "MQTT Topic",
-        "type": "string"
-      },
-      "payload": {
-        "title": "MQTT Payload",
-        "type": "string"
+      "doors": {
+        "title": "Doors",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Name in Apple Home",
+              "type": "string",
+              "default": "Front Door"
+            },
+            "mqttHost": {
+              "title": "MQTT Broker Host",
+              "type": "string",
+              "default": "62.219.14.161"
+            },
+            "mqttPort": {
+              "title": "MQTT Broker Port",
+              "type": "integer",
+              "default": 1883
+            },
+            "topic": {
+              "title": "MQTT Topic",
+              "type": "string",
+              "placeholder": "Intercom/BUILDING_ID/startcall"
+            },
+            "payload": {
+              "title": "MQTT Payload",
+              "type": "string",
+              "placeholder": "openDoor1:CODE"
+            }
+          },
+          "required": ["name", "topic", "payload"]
+        }
       }
     },
-    "required": [
-      "name",
-      "mqttHost",
-      "mqttPort",
-      "topic",
-      "payload"
-    ]
+    "required": ["name"]
   }
 }
